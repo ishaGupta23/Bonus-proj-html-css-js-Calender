@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date Cell Color Change</title>
+  <link rel="stylesheet" type="text/css" href="Calender.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Date Cell Color Change</h1>
+    <div class="controls">
+      <div class="select-container">
+        <label for="month">Select Month:</label>
+        <select id="month">
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <!-- Add more months here -->
+        </select>
+      </div>
+      <div class="select-container">
+        <label for="year">Select Year:</label>
+        <select id="year">
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <!-- Add more years here -->
+        </select>
+      </div>
+      <div class="input-container">
+        <label for="date">Enter Any Date:</label>
+        <input type="text" id="date" placeholder="YYYY-MM-DD">
+      </div>
+      <div class="button-container">
+        <button id="changeBtn">Change Color</button>
+      </div>
+    </div>
+    <div id="calendar" class="calendar"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="Calender.js"></script>
+</body>
+</html>
